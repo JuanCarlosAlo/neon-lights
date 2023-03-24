@@ -1,5 +1,9 @@
 :root{
-	/* variables */
+	--max-width: 1004px;
+	--main-color:blue;
+	--secondary-color:white;
+	--terciary-color:gray;
+
 }
 
 *,
