@@ -4,9 +4,11 @@ import ArticleTitle from '../articleTitle/ArticleTitle';
 import {
 	StyledFeaturedImg,
 	StyledFeaturedList,
+	StyledFeaturedListContainer,
 	StyledFeaturedText,
 	StyledFeaturedTitle,
 	StyledFocusContainer,
+	StyledFocusContent,
 	StyledSponsorsContainer,
 	StyledSponsorsImg
 } from './styled';
@@ -14,6 +16,7 @@ import {
 const FocusContainer = () => {
 	return (
 		<StyledFocusContainer>
+			<StyledFocusContent>
 			<StyledSponsorsContainer>
 				{sponsors.map(element => (
 					<StyledSponsorsImg key={v4()} src={element.img} alt='' />
@@ -23,7 +26,7 @@ const FocusContainer = () => {
 				<ArticleTitle text={'Focus on solving bigger problems'}/>
 				<img src='/images/features.svg' alt='' />
 			</div>
-			<div>
+			<StyledFeaturedListContainer>
 				{features.map(element=> 
 					<StyledFeaturedList key={v4()}>
 						<StyledFeaturedImg src={element.img} alt="" />
@@ -31,7 +34,8 @@ const FocusContainer = () => {
 						<StyledFeaturedText>{element.text}</StyledFeaturedText>
 					</StyledFeaturedList>
 					)}
-			</div>
+			</StyledFeaturedListContainer>
+			</StyledFocusContent>
 		</StyledFocusContainer>
 	);
 };

@@ -12,7 +12,7 @@ import {
 	StyledHeaderTop
 } from './styled';
 import { COLORS } from '../../constants/const';
-import { StyledLink } from '../linkElement/styled';
+
 import LinkElement from '../linkElement/LinkElement';
 
 const Header = () => {

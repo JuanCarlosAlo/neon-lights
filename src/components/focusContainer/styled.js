@@ -13,6 +13,12 @@ const StyledFocusContainer = styled.div`
 	background-color: var(--main-color);
 `;
 
+const StyledFocusContent = styled.div`
+	@media screen and (min-width: 768px) {
+		width: var(--max-width);
+	}
+`;
+
 const StyledSponsorsContainer = styled.div`
 	display: flex;
 	flex-wrap: wrap;
@@ -21,12 +27,21 @@ const StyledSponsorsContainer = styled.div`
 	gap: 3rem;
 
 	padding-bottom: 2rem;
-	border-bottom: 1px solid var(--terciary-color);
+	border-bottom: 1px solid var(--gradiant-white);
 `;
 const StyledSponsorsImg = styled.img`
 	width: 125px;
+	height: 30px;
 	filter: invert(1);
 	opacity: 0.4;
+`;
+const StyledFeaturedListContainer = styled.div`
+	display: flex;
+	flex-direction: column;
+	@media screen and (min-width: 768px) {
+		flex-direction: row;
+		gap: 8rem;
+	}
 `;
 
 const StyledFeaturedList = styled.div`
@@ -59,5 +74,7 @@ export {
 	StyledFeaturedList,
 	StyledFeaturedImg,
 	StyledFeaturedTitle,
-	StyledFeaturedText
+	StyledFeaturedText,
+	StyledFeaturedListContainer,
+	StyledFocusContent
 };

@@ -3,7 +3,7 @@ import { COLORS } from '../../constants/const';
 import Button from '../button/Button';
 import CheckedListItem from '../checkedListItem/CheckedListItem';
 import LinkElement from '../linkElement/LinkElement';
-import { StyledCardItem } from './styled';
+import { StyledCardItem, StyledListTitle, StyledMostPopular, StyledPlanTitle, StyledPriceDollar, StyledPriceNumber } from './styled';
 
 const CardItem = ({
 	title,
@@ -11,13 +11,17 @@ const CardItem = ({
 	text,
 	featuringText,
 	checkedText,
-	bgColor
+	bgColor,
+	special
 }) => {
-	console.log(bgColor);
+	console.log(special);
 	return (
 		<StyledCardItem bgColor={bgColor}>
-			<p>{title}</p>
-			<p>${price}/mo</p>
+			{
+				popularFilter(special)
+			}
+			<StyledPlanTitle>{title}</StyledPlanTitle>
+			<StyledPriceDollar>$</StyledPriceDollar><StyledPriceNumber>{price}</StyledPriceNumber><span>/mo</span>
 			<p>{text}</p>
 			<Button
 				text={'Start Free Trial'}
@@ -27,12 +31,22 @@ const CardItem = ({
 			>
 				<LinkElement />
 			</Button>
-			<p>{featuringText}</p>
+			<StyledListTitle>{featuringText}</StyledListTitle>
 			{checkedText.map(text => (
-				<CheckedListItem key={v4()} text={text} />
+				<CheckedListItem key={v4()} text={text} special={special}/>
 			))}
 		</StyledCardItem>
 	);
 };
+
+const popularFilter =(special)=>{
+	if (special) {
+		return (<StyledMostPopular>
+			<img src="/images/fire.svg" alt="" />
+			<p>Most Popular</p>
+		</StyledMostPopular>)
+		
+	}
+}
 
 export default CardItem;

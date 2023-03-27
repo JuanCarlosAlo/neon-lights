@@ -11,7 +11,7 @@ const StyledHeader = styled.header`
 	color: var(--terciary-color);
 
 	background: url('/images/hero-illustration.svg'),
-		linear-gradient(180deg, var(--main-color) 90%, #374151);
+		linear-gradient(180deg, var(--main-color) 90%, var(--gradiant-white));
 	background-size: cover;
 	background-position: center;
 `;

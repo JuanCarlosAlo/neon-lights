@@ -45,7 +45,7 @@ const features = [
 
 const cards = [
 	{
-		tile: 'Starter',
+		title: 'Starter',
 		price: '49',
 		text: 'For teams building apps for many public & private users.',
 		featuringText: 'Features include:',
@@ -55,10 +55,11 @@ const cards = [
 			'Excepteur sint occaecat cupidatat',
 			'Officia deserunt mollit anim'
 		],
-		bgColor: 'transparent'
+		bgColor: 'transparent',
+		special: false
 	},
 	{
-		tile: 'Business',
+		title: 'Business',
 		price: '79',
 		text: 'For teams building apps for many public & private users.',
 		featuringText: 'Everything in Starter, plus:',
@@ -70,19 +71,22 @@ const cards = [
 			'Excepteur sint occaecat cupidatat',
 			'Officia deserunt mollit anim'
 		],
-		bgColor: 'rgb(31 41 55)'
+		bgColor: 'rgb(31 41 55)',
+		special: true
 	},
 	{
-		tile: 'Enterprise',
+		title: 'Enterprise',
 		price: '129',
 		text: 'For teams building apps for many public & private users.',
 		featuringText: 'Everything in Business, plus:',
 		checkedText: [
 			'Unlimited placeholder texts',
 			'Consectetur adipiscing elit',
-			'Excepteur sint occaecat cupidatat'
+			'Excepteur sint occaecat cupidatat',
+			'Officia deserunt mollit anim'
 		],
-		bgColor: 'transparent'
+		bgColor: 'transparent',
+		special: false
 	}
 ];
 

@@ -18,4 +18,18 @@ const StyledPlanContainer = styled.div`
 	background-position: top right;
 `;
 
-export { StyledPlanContainer };
+const StyledPlanContent = styled.div`
+	max-width: var(--max-width);
+`;
+
+const StyledCardsContainer = styled.div`
+	display: flex;
+	flex-direction: column;
+	padding-top: 4rem;
+	gap: 2rem;
+	@media screen and (min-width: 768px) {
+		flex-direction: row;
+	}
+`;
+
+export { StyledPlanContainer, StyledCardsContainer, StyledPlanContent };
