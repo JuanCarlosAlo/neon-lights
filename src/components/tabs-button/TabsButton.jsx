@@ -1,10 +1,16 @@
-import { StyledButton } from "./styled"
+import { StyledButton } from './styled';
 
-const TabsButton =({img,text})=>{
-    return <StyledButton>
-        <img src={img} alt="" />
-        <span>{text}</span>
-    </StyledButton>
-}
+const TabsButton = ({ img, text, index, setCard, boxShadow, rotate }) => {
+	return (
+		<StyledButton
+			onClick={() => setCard(index)}
+			boxShadow={boxShadow}
+			rotate={rotate}
+		>
+			<img src={img} alt='' />
+			<span>{text}</span>
+		</StyledButton>
+	);
+};
 
-export default TabsButton
+export default TabsButton;

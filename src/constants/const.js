@@ -6,7 +6,12 @@ const COLORS = {
 	buttonBlueGradiant: 'linear-gradient(180deg, #689FFF 18.75%, #367BF3 69.27%)',
 	buttonBlack: '#1f2937',
 	buttonBlackColor: 'rgb(209 213 219)',
-	buttonBlackGradiant: 'linear-gradient(180deg, #374151 18.75%, #1f2937 69.27%)'
+	buttonBlackGradiant:
+		'linear-gradient(180deg, #374151 18.75%, #1f2937 69.27%)',
+	gradientFromCard: '#2563eb',
+	gradientToCard: '#a855f7',
+	buttonPurpleGradiant:
+		'linear-gradient(180deg, #a855f7 18.75%, #2563eb 69.27%)'
 };
 
 const sponsors = [

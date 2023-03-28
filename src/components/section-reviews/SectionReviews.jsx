@@ -1,4 +1,4 @@
-import { v4 } from "uuid"
+
 import { reviews } from "../../constants/reviews"
 import ArticleTitle from "../articleTitle/ArticleTitle"
 import ReviewCard from "../review-card/ReviewCard"
