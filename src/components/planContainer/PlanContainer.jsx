@@ -19,7 +19,7 @@ const PlanContainer = () => {
 				</p>
 				<StyledCardsContainer>
 					{cards.map(card => (
-						<CardItem key={v4()} {...card} />
+						<CardItem key={card.id} {...card} />
 					))}
 				</StyledCardsContainer>
 			</StyledPlanContent>

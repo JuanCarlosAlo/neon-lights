@@ -1,13 +1,22 @@
+import { v4 } from "uuid"
+import { reviews } from "../../constants/reviews"
 import ArticleTitle from "../articleTitle/ArticleTitle"
-import { StyledSectionReview } from "./styled"
+import ReviewCard from "../review-card/ReviewCard"
+import { StyledSectionContent, StyledSectionReview, StyledTestimonialsContainer } from "./styled"
 
 const SectionReviews =()=>{
     return(
         <StyledSectionReview>
+            <StyledSectionContent>
             <ArticleTitle text={'Sound too good ? Hear what our customers have to say'}/>
-            <div>
-          
-            </div>
+            <StyledTestimonialsContainer>
+                {
+                    reviews.map(card=>
+                        <ReviewCard key={card.id} {...card}/>
+                        )
+                }
+            </StyledTestimonialsContainer>
+            </StyledSectionContent>
         </StyledSectionReview>
     )
 }

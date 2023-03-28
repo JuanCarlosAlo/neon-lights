@@ -1,3 +1,5 @@
+import { v4 } from 'uuid';
+
 const COLORS = {
 	buttonBlue: '#2563eb',
 	buttonBlueColor: ' rgb(255 255 255) ',
@@ -9,34 +11,42 @@ const COLORS = {
 
 const sponsors = [
 	{
+		id: v4(),
 		img: '/images/facebook.svg'
 	},
 	{
+		id: v4(),
 		img: '/images/tinder.svg'
 	},
 	{
+		id: v4(),
 		img: '/images/airbnb.svg'
 	},
 	{
+		id: v4(),
 		img: '/images/hubspot.svg'
 	},
 	{
+		id: v4(),
 		img: '/images/amazon.svg'
 	}
 ];
 
 const features = [
 	{
+		id: v4(),
 		img: '/images/icon-square.svg',
 		title: 'Ready for the future',
 		text: 'A flexible foundation that evolves with complex ecosystem.'
 	},
 	{
+		id: v4(),
 		img: '/images/icon-brackets.svg',
 		title: 'Ready for the future',
 		text: 'A flexible foundation that evolves with complex ecosystem.'
 	},
 	{
+		id: v4(),
 		img: '/images/icon-check-list.svg',
 		title: 'Ready for the future',
 		text: 'A flexible foundation that evolves with complex ecosystem.'
@@ -45,6 +55,7 @@ const features = [
 
 const cards = [
 	{
+		id: v4(),
 		title: 'Starter',
 		price: '49',
 		text: 'For teams building apps for many public & private users.',
@@ -59,6 +70,7 @@ const cards = [
 		special: false
 	},
 	{
+		id: v4(),
 		title: 'Business',
 		price: '79',
 		text: 'For teams building apps for many public & private users.',
@@ -75,6 +87,7 @@ const cards = [
 		special: true
 	},
 	{
+		id: v4(),
 		title: 'Enterprise',
 		price: '129',
 		text: 'For teams building apps for many public & private users.',

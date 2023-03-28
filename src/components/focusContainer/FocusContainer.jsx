@@ -19,7 +19,7 @@ const FocusContainer = () => {
 			<StyledFocusContent>
 			<StyledSponsorsContainer>
 				{sponsors.map(element => (
-					<StyledSponsorsImg key={v4()} src={element.img} alt='' />
+					<StyledSponsorsImg key={element.id} src={element.img} alt='' />
 				))}
 			</StyledSponsorsContainer>
 			<div>
@@ -28,7 +28,7 @@ const FocusContainer = () => {
 			</div>
 			<StyledFeaturedListContainer>
 				{features.map(element=> 
-					<StyledFeaturedList key={v4()}>
+					<StyledFeaturedList key={element.id}>
 						<StyledFeaturedImg src={element.img} alt="" />
 						<StyledFeaturedTitle>{element.title}</StyledFeaturedTitle>
 						<StyledFeaturedText>{element.text}</StyledFeaturedText>
