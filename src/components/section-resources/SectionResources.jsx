@@ -5,7 +5,7 @@ import ArticleTitle from "../articleTitle/ArticleTitle"
 import Button from "../button/Button"
 import TabsButton from "../tabs-button/TabsButton"
 import TabsElement from "../tabs-element/TabsElement"
-import { StyledBannerContainer, StyledButtonsContainer, StyledResourcesContainer, StyledResourcesContent, StyledTabsContainer } from "./styled"
+import { StyledBannerContainer, StyledBannerTitle, StyledButtonsContainer, StyledResourcesContainer, StyledResourcesContent, StyledTabsContainer } from "./styled"
 
 const SectionResources = ()=>{
     const [card,setCard] = useState(0)
@@ -38,7 +38,7 @@ const SectionResources = ()=>{
                 </StyledTabsContainer>
                 <StyledBannerContainer>
                   <div>
-                  <ArticleTitle text={'Get started with Neon'}/>
+                  <StyledBannerTitle>Get started with Neon</StyledBannerTitle>
                   <p>It only takes a few minutes to get started with Neon. Understand your users, start free, today.</p>
                   </div>
                   <Button

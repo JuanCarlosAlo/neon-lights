@@ -1,4 +1,5 @@
 import FocusContainer from "../focusContainer/FocusContainer"
+import Footer from "../footer/Footer"
 import Header from "../header/Header"
 import PlanContainer from "../planContainer/PlanContainer"
 import PrivacyContainer from "../privacyContainer/PrivacyContainer"
@@ -14,6 +15,7 @@ const MainContainer =()=>{
         <PlanContainer/>
         <SectionReviews/>
         <SectionResources/>
+        <Footer/>
         </>
     )
 }

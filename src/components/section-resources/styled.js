@@ -26,6 +26,7 @@ const StyledTabsContainer = styled.div`
 	flex-direction: column;
 	justify-content: center;
 	padding: 2rem;
+	margin-bottom: 2rem;
 	gap: 2rem;
 	@media screen and (min-width: 768px) {
 		flex-direction: row;
@@ -36,7 +37,10 @@ const StyledBannerContainer = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	text-align: center;
 	padding: 4rem;
+
+	color: rgb(191 219 254);
 	background: linear-gradient(
 		45deg,
 		${COLORS.gradientFromCard},
@@ -44,7 +48,18 @@ const StyledBannerContainer = styled.div`
 	);
 	@media screen and (min-width: 768px) {
 		flex-direction: row;
+		justify-content: space-between;
+		text-align: left;
 	}
+`;
+
+const StyledBannerTitle = styled.h3`
+	font-size: 2.5rem;
+	text-align: center;
+	width: fit-content;
+
+	margin: 0;
+	color: white;
 `;
 
 export {
@@ -52,5 +67,6 @@ export {
 	StyledResourcesContent,
 	StyledResourcesContainer,
 	StyledTabsContainer,
-	StyledBannerContainer
+	StyledBannerContainer,
+	StyledBannerTitle
 };
